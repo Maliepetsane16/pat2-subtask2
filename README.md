@@ -15,7 +15,12 @@ int main(){
         "...", "-", "..-", "...-", ".--", "-..-",
         "-.--", "--.."
     };
+ cout << "Enter message in English (A-Z characters only): ";
+    getline(cin, message);
 
+    for(int i = 0; i < message.length(); i++)
+    {
+        char ch = message[i];
 
     return 0;
 }
