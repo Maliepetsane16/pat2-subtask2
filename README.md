@@ -21,6 +21,18 @@ int main(){
     for(int i = 0; i < message.length(); i++)
     {
         char ch = message[i];
+ if(ch >= 'A' && ch <= 'Z')
+        {
+            int index = ch - 'A';
+
+            cout << ch << ": " << code[index] << endl;
+
+            morse += code[index] + "   ";
+        }
+    }
+
+    cout << "Full Morse Message:";
+    cout << morse << endl;
 
     return 0;
 }
